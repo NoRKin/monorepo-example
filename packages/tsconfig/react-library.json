@@ -3,9 +3,16 @@
   "display": "React Library",
   "extends": "./base.json",
   "compilerOptions": {
-    "lib": ["ES2015"],
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
     "module": "ESNext",
-    "target": "ES6",
+    "resolveJsonModule": true,
+    "noEmit": true,
     "jsx": "react-jsx"
-  }
+  },
+  "include": ["src"]
 }
